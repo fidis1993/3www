@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="style.css">
+
+  <title> 
+    Single Page Application (SPA) by Themis Sarafidis 
+
+  </title>
+
+</head>
+<body>
+  <div class ="container">
+    <header>
+
+      <img src ="ella_fitzgerald_image.jpg" alt="Ella Fitzgerald" class="header-image">
+      <h1>Ella Fitzgerald the Queen of Jazz</h1>
+
+    </header>
+
+    <nav class ="main-menu">
+
+      <button onclick= "goToHome()">Home</button>
+      <button onclick = "showSection('biography')">Biography</button>
+      <button onclick =  "showSection('photos')">More Photos</button>
+      <button onclick= "showSection('discography')">Discography</button>
+      <button onclick= "showSection('links')">Links</button>
+      <button onclick = "showSection('management')">Management</button>
+      <form id="loginForm">
+        <label for="username">Username : </label>
+        <input type="text" id="username" name="username" required>
+        <label for="password"> Password : </label>
+        <input type="password" id="password" name="password" default required>
+        <button type="button" class="login-btn"> Login</button>
+      </form>
+      <button class=".logout-btn"> Logout</button>
+    </nav>
+
+    <aside class="left-menu">
+      <div class="biography-section">
+  
+          <h2>Ella Fitzgerald-Biography</h2>
+          <ul class="biography-links">
+            <li> <a href = "#Intro">Intro</a> </li>
+            <li> <a href = "#Who?">Who?</a> </li>
+          </ul>
+          <div class ="biography-group" id="Intro" >
+
+            <p>Ella Fitzgerald, also known as the "First Lady of Song" and the the "Queen of Jazz,", was an American jazz vocalist born on April 25, 1917, in Newport News, Virginia. With a career spanning over six decades, Fitzgerald became one of the most celebrated and influential jazz singers of all time.</p>
+            <p>Known for her impeccable voice, scat singing, and improvisational skills, Fitzgerald recorded numerous albums and worked with legendary musicians such as Duke Ellington, Louis Armstrong, and Count Basie. Her contributions to the world of jazz and her extraordinary vocal talent have left an indelible mark on the music industry.</p>
+            <p>Throughout her career, Ella Fitzgerald received numerous awards, including 13 Grammy Awards. She passed away on June 15, 1996, but her legacy continues to inspire and influence generations of musicians.</p>
+          
+          </div>
+          <div class = "biography-group" id="Who?" >
+
+            <h2>Who Was Ella Fitzgerald?</h2>
+
+            <p>Ella Fitzgerald turned to singing after a troubled childhood and debuted at the Apollo Theater in 1934. Discovered in an amateur contest, she went on to become the top female jazz singer for decades. In 1958, Fitzgerald made history as the first African American woman to win a Grammy Award. Due in no small part to her vocal 
+              quality, with lucid intonation and a broad range, the singer would go on to win 13 Grammys in total and sell more than 40 million albums. Her multi-volume "songbooks" on Verve Records are among America's recording treasures.</p>
+          
+            </div>
+        </div>
+
+      <div class = "photos-section" style = "display: inline-table;">
+        
+        <h2>Ella Fitzgerald - Photos</h2>
+        <p>Explore a collection of iconic photos capturing moments from Ella Fitzgerald's illustrious career.</p>
+         
+        <ul class = "photo-links">
+          <li><a href="#groupA" >GroupA</a></li>
+          <li><a href="#groupB" >GroupB</a></li>
+        </ul>
+
+        <div class="photos-group" id="groupA">
+
+          <img src="ella_fitzgerald_image2.jpg" alt="Ella Fitzgerald2" class="additional-images">
+          <img src="ella_fitzgerald_image3.jpg" alt= "Ella Fitzgerald3" class="additional-images">
+          <img src="ella_fitzgerald_image4.jpg" alt="Ella Fitzgerald4" class= "additional-images">
+        
+        </div>
+         
+        <div class ="photos-group" id="groupB" >
+
+          <img src ="ella_fitzgerald_image5.jpg" alt= "Ella Fitzgerald5" class= "additional-images">
+          <img src= "ella_fitzgerald_image6.jpg" alt="Ella Fitzgerald6" class="additional-images">
+        
+        </div>
+
+      </div>
+
+      <div class ="discography-section">
+        
+        <h2>Ella Fitzgerald-Discography </h2>
+        <h3> DECCA (1949-1967)</h3>
+        <p>Here we have  some of Ella Fitzgerald's records, featuring a wide range of albums showcasing her versatility and mastery of jazz and vocal performance.</p>
+        
+        <ul>
+          <li><strong>1949:</strong> SOUVENIR ALBUM </li>
+          <li><strong>1954:</strong> SONGS IN A MELLOW MOOD </li>
+          <li><strong>1955:</strong> LULLABIES OF BIRDLAND </li>
+          <li><strong>1955:</strong> SWEET AND HOT </li>
+        </ul>
+
+        <h3> Verve / (1956 - 1966)</h3>
+        
+        <ul>
+          <li><strong>1956:</strong> THE COLE PORTER SONG BOOK </li>
+          <li><strong>1956:</strong> ELLA AND LOUIS </li>
+          <li><strong>1957:</strong> LIKE SOMEONE IN LOV E</li>
+          <li><strong>1959:</strong> SWEET SONGS FOR SWINGERS </li>
+        </ul>
+        
+        <p> Others that are not mentioned are: 
+          <br>Capitol/ (1967 - 1968)
+          <br>Reprise/ (1969 - 1971)
+          <br>Atlantic/ (1971)
+        </p>
+      
+      </div>
+
+      <div class="links-section" style="display: none;">
+        
+        <h2>Ella Fitzgerald - Links</h2>
+        
+        <p>Explore more about Ella Fitzgerald through these curated links:</p>
+        <ul>
+
+          <li><a href="https://www.ellafitzgerald.com/" target="_blank">Official Website</a></li>
+          <li><a href="https://www.biography.com/musician/ella-fitzgerald" target="_blank">Biography.com - Ella Fitzgerald</a></li>
+          <li><a href="https://www.allmusic.com/artist/ella-fitzgerald-mn0000188666" target="_blank">AllMusic - Ella Fitzgerald</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="management-section" style="display: none;">
+        
+        <h2>Ella Fitzgerald- Management</h2>
+        <p>Inquiries about the management and representation of Ella Fitzgerald :</p>
+        <p><strong>Management Company:</strong> Fitzgerald Enterprises</p>
+        <p><strong>Agent:</strong> William Morris Agency</p>
+        
+      </div>
+    </aside>
+
+    <main id="content">
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Ella Fitzgerand Single Page Application (SPA) by Themis Sarafidis</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
